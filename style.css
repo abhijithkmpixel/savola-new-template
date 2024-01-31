@@ -35,7 +35,7 @@
     align-items: center;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    padding: 70px 0;
+    padding: 60px 0;
 }
 .quick__navigation__links__wrap > span{
     width: 1px;
@@ -105,8 +105,8 @@
     padding: 0 30px;
 }
 .overview__slider__block .overview__slider__block__row .content__area {
-    width: 55%;
-    flex: 0 0 55%;
+    width: 57%;
+    flex: 0 0 57%;
 }
 .overview__slider__block .overview__slider__block__row .overview__slider .slick__btn svg{
     width: 22px;
@@ -138,8 +138,8 @@
     border: none;
 }
 .overview__slider__block .overview__slider__block__row .slider__area {
-    width: 45%;
-    flex: 0 0 45%;
+    width: 43%;
+    flex: 0 0 43%;
     position: relative;
 }
 .overview__slider__block .overview__slider__block__row .content__area p{
@@ -186,6 +186,7 @@
     line-height: 1.5;
     font-weight: 300;
     color: #000;
+    margin: 0;
 }
 .chairmans_msg_row .chairmans_msg_area__outer .chairmans_msg_area .chairmans_msg_area__symbol svg{
     width: 74px;
@@ -291,6 +292,9 @@
 .chairmans_msg_row{
     flex-flow: column-reverse;
 }
+.quick__navigation__links__wrap{
+    padding: 40px 0;
+}
 }
 .mb-0{
 margin-bottom: 0 !important;
@@ -347,4 +351,76 @@ transform: rotate(45deg);
 .frequentlty__asked__questions__row .faq__wrap.active__tab p{
     /* height: var(--height); */
     display: block;
+}
+
+.dash{
+    border-color: #B1B1B1;
+    margin: 0;
+
+}
+.social__media__contact li a img{
+    width: 25px;
+    height: auto;
+}
+.social__media__contact li:not(:last-child) {
+    margin-right: 45px;
+}
+.social__media__contact li a{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #255574;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s all ease-in-out;
+}
+.social__media__contact{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 40px 0 0;
+    margin: 0;
+}
+
+@media (min-width:1200px) {
+    .quick__navigation__links__wrap .quick__navigation__link ,.quick__navigation__links__wrap .quick__navigation__link .quick__navigation__link__icon,.quick__navigation__links__wrap .quick__navigation__link:hover .quick__navigation__link__icon img, .quick__navigation__links__wrap .quick__navigation__link span{
+       transition: .2s all ease-in-out;
+    }
+    .quick__navigation__links__wrap .quick__navigation__link:hover span{
+        color: #fff;
+    }
+    .quick__navigation__links__wrap .quick__navigation__link:hover{
+        background-color: #63C5B7;
+    }
+    .quick__navigation__links__wrap .quick__navigation__link:hover .quick__navigation__link__icon{
+        background-color: #fff;
+    }
+    .quick__navigation__links__wrap .quick__navigation__link:hover .quick__navigation__link__icon img{
+       filter: invert(1);
+    }
+    .social__media__contact li a:hover{
+        background-color: #14354b;
+    }
+}
+@media (max-width:720px) {
+.social__media__contact{
+    justify-content: center;
+    padding: 20px 0 0;
+}
+.social__media__contact li:not(:last-child)  {
+margin-right: 20px;
+}
+.social__media__contact li a img{
+    width: 18px;
+}
+.social__media__contact li a{
+    width: 45px;height: 45px;
+}
+.get__in__touch__with__us,.overview__slider__block{
+    padding: 40px 0;
+}
+.chairmans_msg_row .chairmans_msg_area__outer .chairmans_msg_area{
+    padding: 55px 30px;
+}
 }
