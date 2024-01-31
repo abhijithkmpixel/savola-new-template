@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-    margin-right: 18px;
+    margin-left: 18px;
 }
 .quick__navigation__links__wrap .quick__navigation__link span{
     font-size: 20px;
@@ -197,10 +197,10 @@
     background-color:#fff ;
     position: absolute;
     top: -32px;
-    left: -25px;
+    right: -25px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 5px;
 }
 .chairmans_msg_row .chairmans_msg_area__outer .chairmans_msg_area{
@@ -296,6 +296,7 @@
 margin-bottom: 0 !important;
 }
 
+
 .frequentlty__asked__questions__row .faq__wrap h4{
     font-size: 16px;
     line-height: 22px;
@@ -318,7 +319,7 @@ margin-bottom: 0 !important;
     position: absolute;
     z-index: 1;
     top: 22px;
-    right: 20px;
+    left: 20px;
     width: 16px;
     height: auto;
     transition: .2s all ease-in-out;
@@ -327,7 +328,7 @@ margin-bottom: 0 !important;
     margin-bottom: 22px;
     border: 1px solid #74C1B6;
     border-radius:20px ;
-    padding: 20px 40px 10px 33px ;
+    padding: 20px 33px 10px 40px ;
     position: relative;
     cursor: pointer;
     transition: .2s all ease-in-out;
