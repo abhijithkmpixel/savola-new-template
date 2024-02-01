@@ -425,3 +425,30 @@ margin-right: 20px;
     padding: 55px 30px;
 }
 }
+.overview__slider__block .documentsGrid{
+    margin-top: 60px;
+} 
+.overview__slider__block .documentCard .documentCard-cta{
+  color: #fff  !important;
+  text-decoration: none !important;
+} 
+
+/* temporary fixes start  */
+.breadcrumb{
+    margin-bottom: 70px;
+}
+.carousel-slide.carousel-slide-white h1{
+    margin-bottom: 0;
+}
+.text-black.color-blue{
+    font-size: 70px !important;
+}
+.link-blue{
+    text-decoration: none !important;
+}
+@media (max-width:768px) {
+    .text-black.color-blue{
+    font-size: 35px !important;
+}
+}
+/* temporary fixes end*/
