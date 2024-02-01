@@ -29,6 +29,7 @@
     padding: 7px 30px;
     border-radius: 6px;
     position: relative;
+    text-decoration: none !important;
 }
 .quick__navigation__links__wrap{
     display: flex;
