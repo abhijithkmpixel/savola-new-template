@@ -1,4 +1,31 @@
+$(document).ready(function () {
 
+  var myLocalStorageVar = localStorage.getItem('DISCLAIMER');
+  let quick__navigation__links__outer = document.querySelector('.quick__navigation__links__outer')
+  if (quick__navigation__links__outer) {
+    if (!myLocalStorageVar) {
+      // $('.disclaimer__popup__outer').css({ 'display': 'flex' });
+      $('body').append(`
+        <div class="disclaimer__popup__outer" id="disclaimer_popup">
+      <div class="disclaimer__popup__overlay"></div>
+      <div class="disclaimer__popup__contentbox">
+        <h4>${$('html').attr('dir') !== 'rtl' ? 'Disclaimer' : 'Disclaimer'}</h4>
+        <p>
+        ${$('html').attr('dir') !== 'rtl' ? 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illo mollitia fugit odit saepe molestiae nemo quasi expedita repellat quos!' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illo mollitia fugit odit saepe molestiae nemo quasi expedita repellat quos!'}
+        </p>
+        <button id="i_agree">${$('html').attr('dir') !== 'rtl' ? 'I agree' : 'I agree'}</button>
+      </div>
+    </div>
+      `)
+      $('body').css({ 'overflow': 'hidden' });
+    }
+    $('#i_agree').click(function () {
+      $('body').css({ 'overflow': 'auto' });
+      localStorage.setItem('DISCLAIMER', true);
+      $('.disclaimer__popup__outer').remove();
+    })
+  }
+})
 $('.overview__slider').slick({
   infinite: false,
   slidesToShow: 1,
@@ -59,3 +86,4 @@ setTimeout(() => {
   }, 100);
 
 }, 100);
+

@@ -16,7 +16,7 @@
     margin-right: 18px;
 }
 .quick__navigation__links__wrap .quick__navigation__link span{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
     color: #000;
     line-height: 1;
@@ -109,8 +109,8 @@
     padding: 0 30px;
 }
 .overview__slider__block .overview__slider__block__row .content__area {
-    width: 57%;
-    flex: 0 0 57%;
+    /* width: 57%;
+    flex: 0 0 57%; */
 }
 .overview__slider__block .overview__slider__block__row .overview__slider .slick__btn svg{
     width: 22px;
@@ -383,7 +383,7 @@ transform: rotate(45deg);
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 40px 0 0;
+    padding: 30px 0 0;
     margin: 0;
 }
 
@@ -433,6 +433,7 @@ margin-right: 20px;
 }
 .overview__slider__block .documentsGrid{
     margin-top: 20px;
+    justify-content: flex-start;
 } 
 .overview__slider__block .documentCard .documentCard-cta{
   color: #fff  !important;
@@ -440,6 +441,63 @@ margin-right: 20px;
 } 
 .sf-Long-text .breadcrumb ul li a:not(.link-white){
 color: #105678;
+}
+
+.disclaimer__popup__outer .disclaimer__popup__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    /* opacity: .5; */
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    overscroll-behavior: contain;
+
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox p{
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox h4{
+    font-size: 30px;
+    color: #105678;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: 800;
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox button{
+    padding: 10px 25px;
+    background-color: #63C5B7;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    border: 0;
+    outline: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox{
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 23px;
+    width: 100%;
+    max-width: 530px;
+}
+.disclaimer__popup__outer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overscroll-behavior: contain;
 }
 /* temporary fixes start  */
 .page-section.contact-section{
@@ -457,9 +515,15 @@ background-color: #F5F5F5;
 .link-blue{
     text-decoration: none !important;
 }
+@media (max-width:1500px) {
+    .quick__navigation__links__wrap .quick__navigation__link span{
+        font-size: 18px;
+    }
+}
 @media (max-width:768px) {
     .text-black.color-blue{
     font-size: 35px !important;
 }
 }
+
 /* temporary fixes end*/
