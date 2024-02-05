@@ -392,6 +392,7 @@ transform: rotate(45deg);
 .social__media__contact{
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
     padding: 30px 0 0;
 }
@@ -458,7 +459,7 @@ color: #105678;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .6);
+        background-color: rgba(0, 0, 0, .8);
     /* opacity: .5; */
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
@@ -469,6 +470,16 @@ color: #105678;
     margin-bottom: 25px;
     font-size: 18px;
     line-height: 1.4;
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox h5{
+    font-size: 20px;
+    line-height: 1.4;
+    color: #105678;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: 800;
+    text-transform: unset;
+
 }
 .disclaimer__popup__outer .disclaimer__popup__contentbox h4{
     font-size: 30px;
@@ -489,6 +500,13 @@ color: #105678;
     border-radius: 5px;
 
 }
+.disclaimer__popup__outer .disclaimer__popup__contentbox .disclaimer__content{
+    overflow-y: auto;
+    max-height: calc(50dvh);
+    margin-bottom: 30px;
+    /* padding: 5px;
+    border: 1px solid #c4c4c4; */
+}
 .disclaimer__popup__outer .disclaimer__popup__contentbox{
     position: relative;
     z-index: 10;
@@ -496,7 +514,7 @@ color: #105678;
     border-radius: 5px;
     padding: 23px;
     width: 100%;
-    max-width: 530px;
+    max-width: 830px;
 }
 .disclaimer__popup__outer{
     position: fixed;
@@ -514,7 +532,36 @@ color: #105678;
     margin: 0 -10px;
 }
 .overview__slider__block .overview__slider__block__row .overview__slider__mutli img{
-padding: 0 10px;
+    padding: 0 10px;
+}
+@media (max-width:1200px) {
+.disclaimer__popup__outer .disclaimer__popup__contentbox{
+    max-width: calc(100% - 30px);
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox h4{
+    font-size: 24px;
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox h5{
+    font-size: 18px;
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox{
+    padding: 15px;
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox p{
+    font-size: 16px;
+}
+.disclaimer__popup__outer .disclaimer__popup__contentbox button{
+    font-size: 18px;
+    padding: 6px 18px;
+}
+.overview__slider__block .overview__slider__block__row .slider__area .row > div{
+    width: 100%;
+}
+}
+.from-h1-subtitle{
+    font-size: 36px;
+    color:#45555F ;
+    font-weight: 500;
 }
 /* temporary fixes start  */
 .page-section.contact-section{
